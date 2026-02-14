@@ -86,7 +86,15 @@ pop_hist_df = pd.DataFrame({
 "total population": total_pop_hist[:].flatten()
 })
 
-csv_filename = "total_population_historical.csv"
+##### Limiting to Europe
+
+pop_hist_df.loc[... < pop_hist_df["latitude"] < ...]
+
+pop_hist_df.loc[... < pop_hist_df["longitude"] < ...]
+
+##### Saving Data
+
+csv_filename = "total_population_historical_europe.csv"
 pop_hist_df.to_csv(csv_filename, index=False)
 
 print(f"Historical Population (all rows) saved to {csv_filename}")
@@ -135,7 +143,15 @@ pop_ssp1_df = pd.DataFrame({
 "total population": total_pop_ssp1[:].flatten()
 })
 
-csv_filename = "total_population_ssp1.csv"
+##### Limiting to Europe
+
+pop_ssp1_df.loc[... < pop_ssp1_df["latitude"] < ...]
+
+pop_ssp1_df.loc[... < pop_ssp1_df["longitude"] < ...]
+
+##### Saving Data
+
+csv_filename = "total_population_ssp1_europe.csv"
 pop_ssp1_df.to_csv(csv_filename, index=False)
 
 print(f"Population for SSP1 (all rows) saved to {csv_filename}")
@@ -182,7 +198,15 @@ pop_ssp2_df = pd.DataFrame({
 "total population": total_pop_ssp2[:].flatten()
 })
 
-csv_filename = "population_ssp2.csv"
+##### Limiting to Europe
+
+pop_ssp2_df.loc[... < pop_ssp2_df["latitude"] < ...]
+
+pop_ssp2_df.loc[... < pop_ssp2_df["longitude"] < ...]
+
+##### Saving Data
+
+csv_filename = "population_ssp2_europe.csv"
 pop_ssp2_df.to_csv(csv_filename, index=False)
 
 print(f"Population for SSP2 (all rows) saved to {csv_filename}")
@@ -233,11 +257,18 @@ pop_ssp5_df = pd.DataFrame({
 "total population": total_pop_ssp5[:].flatten()
 })
 
-csv_filename = "population_ssp5.csv"
+##### Limiting to Europe
+
+pop_ssp5_df.loc[... < pop_ssp5_df["latitude"] < ...]
+
+pop_ssp5_df.loc[... < pop_ssp5_df["longitude"] < ...]
+
+##### Saving Data
+
+csv_filename = "population_ssp5:europe.csv"
 pop_ssp5_df.to_csv(csv_filename, index=False)
 
 print(f"Population for SSP5 (all rows) saved to {csv_filename}")
-
 
 
 ### Nighttime light
