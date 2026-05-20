@@ -1,0 +1,39 @@
+## Array & DataFrame
+import numpy as np
+import pandas as pd
+import geopandas
+import duckdb
+import re
+import scipy
+from scipy.interpolate import CubicSpline
+import datetime
+
+
+## Geospatial
+from countrygroups import OECD
+import reverse_geocoder as rg
+import country_converter as coco
+
+## Raster & Image Handeling
+import rasterio
+import rioxarray as rxr
+import xarray as xr
+import netCDF4 as nc
+
+## Modelling & Statistics
+import sklearn
+from sklearn.linear_model import BayesianRidge
+from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import MinMaxScaler
+import scipy.stats as stats
+from statsmodels.graphics.gofplots import qqplot
+import scikit_posthocs as sp
+
+## Visualisation
+import matplotlib
+import matplotlib.pyplot as plt
+
+## Versioning
+import sys
+import os
+import glob
